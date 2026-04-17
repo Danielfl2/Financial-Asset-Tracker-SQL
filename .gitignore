@@ -1,0 +1,11 @@
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore PostgreSQL/Database local logs
+*.log
+*.dump
+*.sqlitedb
+
+# Ignore pgAdmin settings (if any)
+.pgadmin/
