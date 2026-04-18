@@ -1,8 +1,11 @@
--- We standardize the tickers registered in Historical and Dividends
+-- We standardize the tickers registered in Historical, Dividends and 
 UPDATE Historical
 SET Ticker = UPPER(Ticker);
 
 UPDATE Dividends
+SET Ticker = UPPER(Ticker);
+
+UPDATE Transactions
 SET Ticker = UPPER(Ticker);
 
 -- The registers with a negative or null close price are deleted
