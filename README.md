@@ -1,14 +1,13 @@
-Simple SQL project for learning made with POSTGRESQL. In 01 you create the 
-historical table where the close price info of a ticker in a certain date
-can be storaged and the Dividends table where the close date and amount of
-a dividend of a certain stock is saved. 02 is the script where information to 
-Historical table can be inputed. 03 functions as 02 but for the dividends
-table. 04 filter the records of the historical table by date. 05 filter 
-the historical table by stock. 06 gets all the records that fall within a 
-range of the close price. 07 calculates the cash volume (amount of money 
-moved in a day by a stock) and order by it. With 08 and 09 we maintain and
-update the data. 10 is a simple volatility analysis
+Simple SQL project for learning made with POSTGRESQL. 
 
-Each table use VARCHAR(10) for the ticker name of the stock, both use DATE
-for the specified date. Close_Price for Historical uses Decimal(15,2) and
-amount for Dividends uses DECIMAL(10,4). Volume in Historical uses BIGINT. 
+## Table creations
+01 and 02 create the Historical, Dividends and Transactions tables
+
+## Enter Data
+03,04,05 can be used to add new data to the Historical, Dividends and Transaction tables respectively
+
+## Update and Maintenance 
+06 and 07 can be used to check for correctness on the inputed data, clean it and update numerical values
+
+## Analysis and filters
+From 08 to 13 multiple operations can be done over the previous three tables whether it's filtering based on certain characteristics or calculating averages or other relevant values
